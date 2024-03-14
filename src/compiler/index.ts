@@ -26,5 +26,6 @@ THE SOFTWARE.
 
 ---------------------------------------------------------------------------*/
 
-export { ValueError, ValueErrorType, ValueErrorIterator } from '../errors/index'
+export { ValueErrorType, ValueErrorIterator } from '../errors/index'
+export type { ValueError } from '../errors/index'
 export * from './compiler'

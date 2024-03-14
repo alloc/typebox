@@ -29,7 +29,7 @@ THE SOFTWARE.
 import { TypeSystemPolicy } from '../../system/policy'
 import { Kind, TransformKind } from '../../type/symbols/index'
 import { TypeBoxError } from '../../type/error/index'
-import { ValueError } from '../../errors/index'
+import type { ValueError } from '../../errors/index'
 import { KeyOfPropertyKeys, KeyOfPropertyEntries } from '../../type/keyof/index'
 import { Deref, Pushref } from '../deref/index'
 import { Check } from '../check/index'
