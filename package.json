@@ -21,7 +21,7 @@
     "install:local": "hammer task install_local",
     "benchmark": "hammer task benchmark",
     "build:to": "hammer task build_to",
-    "build": "hammer task build",
+    "build": "tsup --clean && tsc -p src --declaration --emitDeclarationOnly --outDir dist",
     "test": "hammer task test",
     "clean": "hammer task clean",
     "format": "hammer task format",
@@ -36,8 +36,11 @@
     "@types/node": "^22.13.5",
     "ajv": "^8.12.0",
     "ajv-formats": "^2.1.1",
+    "esbuild": "^0.25.0",
+    "json5": "^2.2.3",
     "mocha": "^11.1.0",
     "prettier": "^2.7.1",
+    "tsup": "^8.4.0",
     "typescript": "^5.8.2"
   }
 }
